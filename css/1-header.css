@@ -3,7 +3,7 @@ header {
   border-bottom: 1px solid #b5b5b5;
 
   .container {
-    > img:first-of-type {
+    #logo-img {
       width: 65.4px;
     }
 
