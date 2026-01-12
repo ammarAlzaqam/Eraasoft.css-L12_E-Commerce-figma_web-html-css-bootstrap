@@ -1,0 +1,152 @@
+#show-product {
+  padding-block: 40px;
+
+  .container {
+    > img {
+      border-radius: 6px;
+      border: 1px solid #28282828;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .text {
+        h1 {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 40px;
+        }
+
+        strong {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 48px;
+          letter-spacing: 3%;
+        }
+
+        span {
+          color: #a0a0a0;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 3%;
+          text-decoration: line-through;
+        }
+
+        p {
+          color: #6c6c6c;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 3%;
+        }
+      }
+
+      .buttons {
+        button.btn {
+          font-size: 1rem;
+        }
+
+        & :first-child {
+          background-color: transparent;
+          color: black;
+          transition: background-color 0.3s ease, color 0.3s ease,
+            border 0.3s ease;
+
+          &:hover {
+            background-color: #a0a0a0;
+            color: #2d2d2d;
+            border-color: #a0a0a0;
+          }
+        }
+      }
+
+      .values {
+        gap: 32px;
+
+        .value {
+          width: calc(33.333333% - 1.333333rem);
+          p {
+            color: #717171;
+            width: 81px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+
+            span {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#related-products {
+  padding-block: 40px;
+
+  .container {
+    h2 {
+      margin-bottom: 2rem;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .product-card {
+      background-color: #f6f6f6;
+      border-radius: 9px;
+      padding: 24px 16px;
+
+      @media (max-width: 575px) {
+        padding: 12px;
+      }
+
+      img {
+        width: 100%;
+        height: clamp(104px, 20vw, 160px);
+        object-fit: cover;
+        border: 1px solid #28282828;
+        border-radius: 6px;
+      }
+
+      h3 {
+        margin-top: clamp(8px, 2vw, 16px);
+        color: #121212;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        @media (max-width: 575px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      p {
+        margin-top: 0.5rem;
+        color: #282828;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 3%;
+
+        @media (max-width: 575px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      button {
+        margin-top: clamp(12px, 2vw, 18px);
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 0;
+}

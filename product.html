@@ -9,9 +9,9 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--//! CSS file -->
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href"./css/product-page.css>
+    <link rel="stylesheet" href="./css/product-page.css">
     <!--//! Icon -->
-    <link rel="shortcut icon" href="./images/icon.png" type="image/png">
+    <link rel=" shortcut icon" href="./images/icon.png" type="image/png">
     <title>Product</title>
 </head>
 
@@ -25,14 +25,16 @@
                 <input type="text" name="search" placeholder="Search">
             </div>
             <nav class="d-none d-lg-flex">
-                <a href="#">Home</a>
+                <a href="./index.html">Home</a>
                 <a href="#">About</a>
                 <a href="#">Contact Us</a>
                 <a href="#">Blog</a>
             </nav>
             <div class="icons-wrapper d-none d-lg-flex gap-4">
                 <img src="./images/header/Favorites.svg" alt="header-icon">
-                <img src="./images/header/Cart.svg" alt="header-icon">
+                <a href="./shopping-cart.html">
+                    <img src="./images/header/Cart.svg" alt="header-icon">
+                </a>
                 <img src="./images/header/User.svg" alt="header-icon">
             </div>
             <img class="d-block d-lg-none" src="./images/header/Burger.svg" alt="menu-icon">
@@ -42,28 +44,95 @@
     <!--//TODO>> Show product -->
     <section id="show-product">
         <div class="container">
-            <div class="row">
+            <div class="row g-5">
                 <div class="col-12 col-lg-6">
                     <img class="w-100" src="./images/show-product/product.png" alt="product">
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="content">
-                        <h1>Apple iPhone 14 Pro Max</h1>
-                        <div>
-                            <strong>$1399</strong>
-                            <span>$1499</span>
+                        <div class="text">
+                            <h1 class="mb-4">Apple iPhone 14 Pro Max</h1>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <strong>$1399</strong>
+                                <span>$1499</span>
+                            </div>
+                            <p>
+                                Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without
+                                rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing
+                                the
+                                new systemwith two cameras
+                            </p>
                         </div>
-                        <p>
-                            Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without
-                            rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the
-                            new systemwith two cameras
-                        </p>
-                        <div class="buttons">
+                        <div class="buttons d-flex gap-3">
+                            <button class="btn btn-dark">Add To Wishlist</button>
+                            <button class="btn btn-dark">Add To Cart</button>
+                        </div>
+                        <div class="values d-flex">
+                            <div
+                                class="value d-flex flex-column flex-md-row align-items-center text-center text-md-start gap-3 ">
+                                <img src="./images/show-product/Delivery.svg" alt="value-icon">
+                                <p>Free Delivery <span>1-2 day</span></p>
+                            </div>
+                            <div
+                                class="value d-flex flex-column flex-md-row align-items-center text-center text-md-start gap-3 ">
+                                <img src="./images/show-product/Stock.svg" alt="value-icon">
+                                <p>In Stock <span>Today</span></p>
+                            </div>
+                            <div
+                                class="value d-flex flex-column flex-md-row align-items-center text-center text-md-start gap-3 ">
+                                <img src="./images/show-product/Guaranteed.svg" alt="value-icon">
+                                <p>Guaranteed <span>1 year</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        </div>
-                        <div class="values">
-
-                        </div>
+    <!--//TODO>> Related Products -->
+    <section id="related-products">
+        <div class="container">
+            <h2>Related Products</h2>
+            <div class="row gx-3 gy-4">
+                <div class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <a href="./product.html">
+                            <img src="./images/products/Iphone14-pro1.png" alt="product-img">
+                        </a>
+                        <h3>Apple iPhone 14 Pro 512GB Gold (MQ233)</h3>
+                        <p>$1437</p>
+                        <button class="btn btn-dark">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <a href="./product.html">
+                            <img src="./images/products/Iphone14-pro2.png" alt="product-img">
+                        </a>
+                        <h3>Apple iPhone 11 128GB White (MQ233)</h3>
+                        <p>$510</p>
+                        <button class="btn btn-dark">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <a href="./product.html">
+                            <img src="./images/products/Iphone14-pro3.png" alt="product-img">
+                        </a>
+                        <h3>Apple iPhone 11 128GB White (MQ233)</h3>
+                        <p>$550</p>
+                        <button class="btn btn-dark">Add To Card</button>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <a href="./product.html">
+                            <img src="./images/products/Iphone14-pro1.png" alt="product-img">
+                        </a>
+                        <h3>Apple iPhone 14 Pro 512GB Gold (MQ233)</h3>
+                        <p>$1437</p>
+                        <button class="btn btn-dark">Add To Card</button>
                     </div>
                 </div>
             </div>
