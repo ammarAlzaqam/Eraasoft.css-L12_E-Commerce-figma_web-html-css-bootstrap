@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--//! Bootstrap css cdn file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--//! CSS file -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!--//! Icon -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/png">
+    <title>E-Commerce</title>
+</head>
+
+<body>
+    <!--//TODO>> Header -->
+    <header>
+        <div class="container py-4 py-lg-3 d-flex justify-content-between align-items-center">
+            <img src="./images/header/Logo.svg" alt="LOGO_IMG">
+            <div class="search-field d-none d-lg-flex">
+                <img src="./images/header/Search.svg" alt="search-icon">
+                <input type="text" name="search" placeholder="Search">
+            </div>
+            <nav class="d-none d-lg-flex">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Blog</a>
+            </nav>
+            <div class="icons-wrapper d-none d-lg-flex gap-4">
+                <img src="./images/header/Favorites.svg" alt="header-icon">
+                <img src="./images/header/Cart.svg" alt="header-icon">
+                <img src="./images/header/User.svg" alt="header-icon">
+            </div>
+            <img class="d-block d-lg-none" src="./images/header/Burger.svg" alt="menu-icon">
+        </div>
+    </header>
+
+    <!--//TODO>> Products -->
+    <main>
+        <div class="container d-flex flex-column flex-md-row align-items-md-start">
+            <!--//? Filters for Desktop -->
+            <aside class="d-none d-md-flex flex-column gap-3 sticky-top">
+                <div class="head d-flex justify-content-between align-items-center">
+                    <h2>Categories</h2>
+                    <img src="./images/products/icons/arrow.svg" alt="">
+                </div>
+                <div class="search-field w-100">
+                    <img src="./images/products/icons/search.svg" alt="">
+                    <input type="text" name="search" placeholder="Search">
+                </div>
+                <form>
+                    <div class="d-flex flex-column gap-2">
+                        <div>
+                            <input type="checkbox" name="filter" value="smartphones" id="c1" class="d-none cbx">
+                            <label for="c1" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c1">smartphones</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filter" value="laptops" id="c2" class="d-none cbx">
+                            <label for="c2" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c2">laptops</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filter" value="skincare" id="c3" class="d-none cbx">
+                            <label for="c3" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c3">skincare</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filter" value="sunglasses" id="c4" class="d-none cbx">
+                            <label for="c4" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c4">sunglasses</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filter" value="motorcycle" id="c5" class="d-none cbx">
+                            <label for="c5" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c5">motorcycle</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filter" value="lighting" id="c6" class="d-none cbx">
+                            <label for="c6" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c6">lighting</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filter" value="furniture" id="c7" class="d-none cbx">
+                            <label for="c7" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c7">furniture</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filter" value="men shirts" id="c8" class="d-none cbx">
+                            <label for="c8" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c8">men shirts</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="filter" value="women bags" id="c9" class="d-none cbx">
+                            <label for="c9" class="check">
+                                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                    <path
+                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                    </path>
+                                    <polyline points="1 9 7 14 15 4"></polyline>
+                                </svg>
+                            </label>
+                            <label for="c9">women bags</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark w-100 mt-4">Apply</button>
+                </form>
+            </aside>
+            <!--//? Filters for Mobile -->
+            <div class="filter-box d-flex d-md-none justify-content-between align-items-center rounded-2 p-3">
+                <p>Filters</p>
+                <a href="./filters.html">
+                    <img src="./images/products/icons/filters.svg" alt="filter-icon-image">
+                </a>
+            </div>
+            <div class="products">
+                <h6>Available Products: <data value="85">85</data></h6>
+                <div class="row pt-4 gx-3 gy-4">
+                    <div class="col-6 col-lg-4">
+                        <div class="product-card">
+                            <a href="./product.html">
+                                <img src="./images/products/Iphone14-pro1.png" alt="product-img">
+                            </a>
+                            <h3>Apple iPhone 14 Pro 512GB Gold (MQ233)</h3>
+                            <p>$1437</p>
+                            <button class="btn btn-dark">Add To Card</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="product-card">
+                            <a href="./product.html">
+                                <img src="./images/products/Iphone14-pro2.png" alt="product-img">
+                            </a>
+                            <h3>Apple iPhone 11 128GB White (MQ233)</h3>
+                            <p>$510</p>
+                            <button class="btn btn-dark">Add To Card</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="product-card">
+                            <a href="./product.html">
+                                <img src="./images/products/Iphone14-pro3.png" alt="product-img">
+                            </a>
+                            <h3>Apple iPhone 11 128GB White (MQ233)</h3>
+                            <p>$550</p>
+                            <button class="btn btn-dark">Add To Card</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="product-card">
+                            <a href="./product.html">
+                                <img src="./images/products/Iphone14-pro1.png" alt="product-img">
+                            </a>
+                            <h3>Apple iPhone 14 Pro 512GB Gold (MQ233)</h3>
+                            <p>$1437</p>
+                            <button class="btn btn-dark">Add To Card</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="product-card">
+                            <a href="./product.html">
+                                <img src="./images/products/Iphone14-pro2.png" alt="product-img">
+                            </a>
+                            <h3>Apple iPhone 11 128GB White (MQ233)</h3>
+                            <p>$510</p>
+                            <button class="btn btn-dark">Add To Card</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="product-card">
+                            <a href="./product.html">
+                                <img src="./images/products/Iphone14-pro3.png" alt="product-img">
+                            </a>
+                            <h3>Apple iPhone 11 128GB White (MQ233)</h3>
+                            <p>$550</p>
+                            <button class="btn btn-dark">Add To Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination d-flex align-items-center justify-content-center gap-3">
+                    <img src="./images/products/icons/arrow-left.svg" alt="arrow-icon">
+                    <div class="nof-pages d-flex align-items-end gap-2">
+                        <a href="?pageNumber=1" class="box">1</a>
+                        <a href="?pageNumber=2" class="box">2</a>
+                        <a href="?pageNumber=3" class="box">3</a>
+                        <img src="./images/products/icons/collapse.svg" alt="collapse-icon">
+                        <a href="?pageNumber=12" class="box">12</a>
+                    </div>
+                    <img src="./images/products/icons/arrow-right.svg" alt="arrow-icon">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--//TODO>> Footer -->
+    <footer>
+        <div class="container">
+            <div class="content d-flex flex-wrap flex-lg-nowrap text-center text-md-start">
+                <div class="left d-flex flex-column align-items-center align-items-md-start gap-3 gap-md-4">
+                    <img src="./images/footer/Logo.svg" alt="LOGO_IMG">
+                    <p>We are a residential interior design firm located in Portland. Our boutique-studio offers more
+                        than</p>
+                </div>
+                <div class="right d-flex flex-wrap flex-md-nowrap">
+                    <div class="links d-flex flex-column gap-2 align-items-center align-items-md-start">
+                        <h3>Services</h3>
+                        <p>Bonus program</p>
+                        <p>Gift cards</p>
+                        <p>Credit and payment</p>
+                        <p>Service contracts</p>
+                        <p>Non-cash account</p>
+                        <p>Payment</p>
+                    </div>
+                    <div class="links d-flex flex-column gap-2 align-items-center align-items-md-start">
+                        <h3>Assistance to the buyer</h3>
+                        <p>Find an order</p>
+                        <p>Terms of delivery</p>
+                        <p>Exchange and return of goods</p>
+                        <p>Guarantee</p>
+                        <p>Frequently asked questions</p>
+                        <p>Terms of use of the site</p>
+                    </div>
+                </div>
+            </div>
+            <div class="media d-flex justify-content-center justify-content-md-start">
+                <img src="./images/footer/Twitter.svg" alt="media-icon">
+                <img src="./images/footer/Facebook.svg" alt="media-icon">
+                <img src="./images/footer/Tiktok.svg" alt="media-icon">
+                <img src="./images/footer/Instagram.svg" alt="media-icon">
+            </div>
+        </div>
+    </footer>
+
+    <!--//! Bootstrap js cdn file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--//! Bootstrap css cdn file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--//! CSS file -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!--//! Icon -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/png">
+    <title>Filters</title>
+</head>
+
+<body>
+    <!--//TODO>> Header -->
+    <header>
+        <div class="container py-4 py-lg-3 d-flex justify-content-between align-items-center">
+            <img src="./images/header/Logo.svg" alt="LOGO_IMG">
+            <img src="./images/header/Burger.svg" alt="menu-icon">
+        </div>
+    </header>
+
+    <section id="filters" class="space-top">
+        <div class="container">
+            <div class="back-box d-flex align-items-center gap-3 mb-4">
+                <a href="./index.html">
+                    <img src="./images/products/icons/back-arrow.svg" alt="back-arrow-icon">
+                </a>
+                <h4>Filters</h4>
+            </div>
+            <aside>
+                <div class="head d-flex justify-content-between align-items-center mb-4">
+                    <h2>Categories</h2>
+                    <img src="./images/products/icons/arrow.svg" alt="">
+                </div>
+                <form>
+                    <div class="inputs-wrapper overflow-auto pe-4">
+                        <div class="search-field mb-3 sticky-top">
+                            <img src="./images/products/icons/search.svg" alt="">
+                            <input type="text" name="search" placeholder="Search">
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                            <div>
+                                <input type="checkbox" name="filter" value="smartphones" id="c1" class="d-none cbx">
+                                <label for="c1" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c1">smartphones</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="laptops" id="c2" class="d-none cbx">
+                                <label for="c2" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c2">laptops</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="skincare" id="c3" class="d-none cbx">
+                                <label for="c3" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c3">skincare</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="sunglasses" id="c4" class="d-none cbx">
+                                <label for="c4" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c4">sunglasses</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="motorcycle" id="c5" class="d-none cbx">
+                                <label for="c5" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c5">motorcycle</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="lighting" id="c6" class="d-none cbx">
+                                <label for="c6" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c6">lighting</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="furniture" id="c7" class="d-none cbx">
+                                <label for="c7" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c7">furniture</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="men shirts" id="c8" class="d-none cbx">
+                                <label for="c8" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c8">men shirts</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="women bags" id="c9" class="d-none cbx">
+                                <label for="c9" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="c9">women bags</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="filter" value="smartphones" id="ch1" class="d-none cbx">
+                                <label for="ch1" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch1">smartphones</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="laptops" id="ch2" class="d-none cbx">
+                                <label for="ch2" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch2">laptops</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="skincare" id="ch3" class="d-none cbx">
+                                <label for="ch3" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch3">skincare</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="sunglasses" id="ch4" class="d-none cbx">
+                                <label for="ch4" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch4">sunglasses</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="motorcycle" id="ch5" class="d-none cbx">
+                                <label for="ch5" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch5">motorcycle</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="lighting" id="ch6" class="d-none cbx">
+                                <label for="ch6" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch6">lighting</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="furniture" id="ch7" class="d-none cbx">
+                                <label for="ch7" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch7">furniture</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="men shirts" id="ch8" class="d-none cbx">
+                                <label for="ch8" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch8">men shirts</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="filter" value="women bags" id="ch9" class="d-none cbx">
+                                <label for="ch9" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path
+                                            d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                        </path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="ch9">women bags</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href=" ./index.html" class="btn btn-dark">
+                        Apply
+                    </a>
+
+                </form>
+            </aside>
+        </div>
+    </section>
+</body>
+
+</html>

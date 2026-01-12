@@ -1,0 +1,62 @@
+#filters {
+  .container {
+    .back-box {
+      img {
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.08);
+        }
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    aside {
+      position: relative;
+      width: 100%;
+
+      .head {
+        padding-block: 12px;
+        border-bottom: 0.5px solid #b5b5b5;
+
+        h2 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 3%;
+        }
+      }
+
+      input {
+        flex: 1;
+        padding-block: 11px;
+      }
+
+      form {
+        .inputs-wrapper {
+          height: 341px;
+
+          &::-webkit-scrollbar {
+            width: 2px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            border-radius: 2px;
+            border: 0;
+          }
+        }
+
+        a {
+          margin-block: 2rem 22px;
+        }
+      }
+    }
+  }
+}

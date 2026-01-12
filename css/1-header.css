@@ -1,0 +1,42 @@
+header {
+  width: 100%;
+  border-bottom: 1px solid #b5b5b5;
+
+  .container {
+    > img:first-of-type {
+      width: 65.4px;
+    }
+
+    input {
+      width: clamp(250px, 25vw, 308px);
+      padding-block: 19px;
+    }
+
+    nav {
+      display: flex;
+      gap: clamp(32px, 4vw, 52px);
+
+      & > :first-child {
+        color: black !important;
+      }
+
+      a {
+        color: #b3b3b3;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+      }
+    }
+
+    .icons-wrapper {
+      > * {
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

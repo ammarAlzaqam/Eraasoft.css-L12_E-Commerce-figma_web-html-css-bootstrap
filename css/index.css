@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("./1-header.css");
+@import url("./2-products.css");
+@import url("./3-footer.css");
+@import url("./filters-page.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5d5d5d;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1143px;
+  }
+}
+
+.space-top {
+  padding-top: 40px;
+}
+
+.btn {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding-block: 12px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.search-field {
+  background: #f5f5f5;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  padding-inline: 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &:focus-within {
+    box-shadow: 1px 1px 10px 1px #0d6dfd4b;
+  }
+
+  img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #adadad;
+    }
+  }
+}

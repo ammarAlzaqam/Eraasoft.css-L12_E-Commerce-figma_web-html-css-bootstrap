@@ -1,0 +1,144 @@
+@import url("./checkbox.css");
+
+main {
+  width: 100%;
+  margin-top: clamp(32px, 4vw, 40px);
+
+  .container {
+    gap: 2rem;
+
+    /*//* filters for Desktop */
+    aside {
+      top: 10px;
+      
+      width: clamp(220px, 22vw, 256px);
+
+      .head {
+        padding-block: 12px;
+        border-bottom: 0.5px solid #b5b5b5;
+
+        h2 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 3%;
+        }
+      }
+
+      input {
+        flex: 1;
+        padding-block: 11px;
+      }
+    }
+
+    /*//* filters for Mobile */
+    .filter-box {
+      border: 0.5px solid #d4d4d4;
+
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: -0.3px;
+      }
+    }
+
+    .products {
+      flex-grow: 1;
+
+      h6 {
+        color: #6c6c6c;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 3%;
+
+        &data {
+          color: #000000;
+          font-size: 20px;
+        }
+      }
+
+      .product-card {
+        background-color: #f6f6f6;
+        border-radius: 9px;
+        padding: 24px 16px;
+
+        @media (max-width: 575px) {
+          padding: 12px;
+        }
+
+        img {
+          width: 100%;
+          height: clamp(104px, 20vw, 160px);
+          object-fit: cover;
+          border: 1px solid #28282828;
+          border-radius: 6px;
+        }
+
+        h3 {
+          margin-top: clamp(8px, 2vw, 16px);
+          color: #121212;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+
+          @media (max-width: 575px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+
+        p {
+          margin-top: 0.5rem;
+          color: #282828;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 3%;
+
+          @media (max-width: 575px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+
+        button {
+          margin-top: clamp(12px, 2vw, 18px);
+        }
+      }
+
+      .pagination {
+        padding-top: 40px;
+
+        .box:first-child {
+          background-color: black;
+          color: white;
+        }
+
+        .box {
+          background: #f6f6f6;
+          padding: 4px 12px;
+          border-radius: 5px;
+
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 3%;
+          text-align: center;
+        }
+
+        > img {
+          border-radius: 50%;
+          cursor: pointer;
+          padding-block: 2px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #f6f6f6;
+          }
+        }
+      }
+    }
+  }
+}
